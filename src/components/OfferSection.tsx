@@ -19,43 +19,41 @@ const OfferSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto text-center">
           {/* Urgency Banner */}
-          <div className="inline-flex items-center bg-gradient-card border border-destructive/30 rounded-full px-6 py-3 shadow-luxury mb-8 animate-fade-in-up">
-            <AlertCircle className="w-5 h-5 text-destructive mr-2 animate-pulse" />
+          <div className="inline-flex items-center bg-card border border-destructive/30 rounded-full px-4 py-2 mb-8 animate-fade-in-up">
+            <AlertCircle className="w-4 h-4 text-destructive mr-2" />
             <span className="text-sm font-medium text-destructive">
-              🚨 Oferta Exclusiva - Tempo Limitado
+              Oferta Exclusiva - Tempo Limitado
             </span>
           </div>
 
           <div className="animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            <h2 className="font-playfair text-4xl lg:text-7xl font-bold mb-8 text-foreground">
+            <h2 className="font-inter text-3xl lg:text-5xl font-bold mb-8 text-foreground">
               Tudo isso por apenas{" "}
-              <span className="bg-gradient-luxury bg-clip-text text-transparent relative">
+              <span className="text-primary relative">
                 R$ 497,00
                 <div className="absolute -top-4 -right-4">
-                  <Crown className="w-12 h-12 text-primary animate-pulse" />
+                  <Crown className="w-8 h-8 text-primary" />
                 </div>
               </span>
             </h2>
             
-            <p className="font-inter text-xl lg:text-2xl text-muted-foreground mb-16 max-w-4xl mx-auto leading-relaxed">
+            <p className="font-inter text-lg lg:text-xl text-muted-foreground mb-16 max-w-4xl mx-auto leading-relaxed">
               Um investimento único para colocar seu negócio na internet com{" "}
-              <span className="font-bold bg-gradient-luxury bg-clip-text text-transparent">
+              <span className="font-bold text-primary">
                 profissionalismo, velocidade e sofisticação premium
               </span>
             </p>
           </div>
 
           {/* Luxury Offer Box */}
-          <div className="bg-gradient-card border-2 border-primary/30 rounded-[3rem] p-8 lg:p-16 shadow-premium mb-16 relative overflow-hidden animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            {/* Shimmer effect */}
-            <div className="absolute inset-0 bg-gradient-luxury opacity-5 animate-shimmer"></div>
+          <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 shadow-md mb-16 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left - What's included */}
-              <div className="space-y-8">
-                <div className="flex items-center justify-center lg:justify-start mb-8">
-                  <Sparkles className="w-8 h-8 text-primary mr-3" />
-                  <h3 className="font-playfair text-3xl lg:text-4xl font-bold text-foreground">
+              <div className="space-y-6">
+                <div className="flex items-center justify-center lg:justify-start mb-6">
+                  <Sparkles className="w-6 h-6 text-primary mr-3" />
+                  <h3 className="font-inter text-2xl lg:text-3xl font-bold text-foreground">
                     Pacote Premium Incluso
                   </h3>
                 </div>
@@ -73,11 +71,11 @@ const OfferSection = () => {
                   ].map((item, index) => {
                     const IconComponent = item.icon;
                     return (
-                      <div key={index} className="flex items-center space-x-4 group">
-                        <div className="w-8 h-8 bg-gradient-luxury rounded-xl flex items-center justify-center group-hover:scale-110 transition-bounce">
-                          <IconComponent className="w-5 h-5 text-white" />
+                      <div key={index} className="flex items-center space-x-3 group">
+                        <div className="w-6 h-6 bg-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-all duration-300">
+                          <IconComponent className="w-4 h-4 text-primary-foreground" />
                         </div>
-                        <span className="font-inter text-lg text-foreground group-hover:text-primary transition-luxury">
+                        <span className="font-inter text-foreground group-hover:text-primary transition-all duration-300">
                           {item.text}
                         </span>
                       </div>
@@ -87,32 +85,31 @@ const OfferSection = () => {
               </div>
 
               {/* Right - Price & CTA */}
-              <div className="text-center space-y-8">
-                <div className="bg-gradient-luxury rounded-3xl p-8 shadow-glow">
-                  <div className="text-white/80 text-lg mb-3">Valor normal: R$ 1.497,00</div>
-                  <div className="font-playfair text-6xl lg:text-7xl font-bold text-white mb-3">
+              <div className="text-center space-y-6">
+                <div className="bg-primary rounded-2xl p-6 shadow-md">
+                  <div className="text-primary-foreground/80 text-sm mb-2">Valor normal: R$ 1.497,00</div>
+                  <div className="font-inter text-4xl lg:text-5xl font-bold text-primary-foreground mb-2">
                     R$ 497
                   </div>
-                  <div className="text-white/80 text-lg">
-                    💳 Pagamento único • 💎 Sem mensalidades
+                  <div className="text-primary-foreground/80 text-sm">
+                    Pagamento único • Sem mensalidades
                   </div>
                 </div>
                 
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <Button 
-                    variant="hero" 
-                    size="lg" 
+                    variant="default" 
+                    size="default" 
                     onClick={handleWhatsAppClick}
-                    className="w-full font-inter text-xl px-10 py-8 h-auto relative group"
+                    className="w-full font-inter text-sm px-6 py-3 h-auto"
                   >
-                    <div className="absolute inset-0 bg-gradient-luxury rounded-lg opacity-0 group-hover:opacity-100 transition-luxury blur animate-shimmer"></div>
-                    <Crown className="w-6 h-6 mr-3" />
+                    <Crown className="w-4 h-4 mr-2" />
                     Quero meu site premium agora!
                   </Button>
                   
-                  <div className="flex items-center justify-center space-x-3 text-sm text-muted-foreground">
-                    <Clock className="w-5 h-5 text-primary" />
-                    <span className="font-medium">⚡ Entrega garantida em até 5 dias úteis</span>
+                  <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
+                    <Clock className="w-4 h-4 text-primary" />
+                    <span className="font-medium">Entrega garantida em até 5 dias úteis</span>
                   </div>
                 </div>
               </div>
@@ -120,18 +117,18 @@ const OfferSection = () => {
           </div>
 
           {/* Trust badges */}
-          <div className="flex flex-wrap justify-center gap-12 text-sm text-muted-foreground animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-            <div className="flex items-center space-x-3">
-              <div className="w-4 h-4 bg-success rounded-full animate-pulse"></div>
-              <span className="font-medium">🔒 Pagamento 100% seguro</span>
+          <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground animate-fade-in-up" style={{animationDelay: '0.4s'}}>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span className="font-medium">Pagamento 100% seguro</span>
             </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-4 h-4 bg-primary rounded-full animate-pulse"></div>
-              <span className="font-medium">✅ Satisfação garantida</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span className="font-medium">Satisfação garantida</span>
             </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-4 h-4 bg-primary-glow rounded-full animate-pulse"></div>
-              <span className="font-medium">🛡️ Suporte premium incluso</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span className="font-medium">Suporte premium incluso</span>
             </div>
           </div>
         </div>

@@ -21,108 +21,108 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-luxury rounded-2xl flex items-center justify-center">
-                <Crown className="w-7 h-7 text-white" />
+              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+                <Crown className="w-6 h-6 text-primary-foreground" />
               </div>
-              <h3 className="font-playfair text-3xl font-bold text-foreground">
+              <h3 className="font-inter text-2xl font-bold text-foreground">
                 Sites{" "}
-                <span className="bg-gradient-luxury bg-clip-text text-transparent">
+                <span className="text-primary">
                   Premium
                 </span>
               </h3>
             </div>
             
-            <p className="font-inter text-lg text-muted-foreground leading-relaxed">
+            <p className="font-inter text-muted-foreground leading-relaxed">
               Transformamos ideias em sites profissionais de{" "}
               <span className="font-semibold text-foreground">alta qualidade</span>{" "}
               que geram resultados extraordinários. Sua presença digital em{" "}
-              <span className="font-semibold bg-gradient-luxury bg-clip-text text-transparent">
+              <span className="font-semibold text-primary">
                 mãos especialistas
               </span>.
             </p>
             
-            <div className="flex space-x-4">
-              <div className="w-12 h-12 bg-gradient-luxury rounded-full flex items-center justify-center group hover:scale-110 transition-bounce">
-                <Globe className="w-6 h-6 text-white" />
+            <div className="flex space-x-3">
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center group hover:scale-110 transition-all duration-300">
+                <Globe className="w-5 h-5 text-primary-foreground" />
               </div>
-              <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-red-500 rounded-full flex items-center justify-center group hover:scale-110 transition-bounce">
-                <Star className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center group hover:scale-110 transition-all duration-300">
+                <Star className="w-5 h-5 text-primary-foreground" />
               </div>
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center group hover:scale-110 transition-bounce">
-                <Sparkles className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center group hover:scale-110 transition-all duration-300">
+                <Sparkles className="w-5 h-5 text-primary-foreground" />
               </div>
             </div>
           </div>
 
           {/* Services */}
           <div className="space-y-6">
-            <h4 className="font-playfair text-2xl font-bold text-foreground flex items-center">
-              <Sparkles className="w-6 h-6 text-primary mr-2" />
+            <h4 className="font-inter text-xl font-bold text-foreground flex items-center">
+              <Sparkles className="w-5 h-5 text-primary mr-2" />
               Nossos Serviços Premium
             </h4>
-            <ul className="space-y-4 font-inter text-lg text-muted-foreground">
-              <li className="flex items-center space-x-3 hover:text-foreground transition-luxury cursor-pointer">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>• Landing Pages de Alto Impacto</span>
+            <ul className="space-y-3 font-inter text-muted-foreground">
+              <li className="flex items-center space-x-2 hover:text-foreground transition-all duration-300 cursor-pointer">
+                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                <span>Landing Pages de Alto Impacto</span>
               </li>
-              <li className="flex items-center space-x-3 hover:text-foreground transition-luxury cursor-pointer">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>• Sites Institucionais Premium</span>
+              <li className="flex items-center space-x-2 hover:text-foreground transition-all duration-300 cursor-pointer">
+                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                <span>Sites Institucionais Premium</span>
               </li>
-              <li className="flex items-center space-x-3 hover:text-foreground transition-luxury cursor-pointer">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>• Sites para Profissionais Liberais</span>
+              <li className="flex items-center space-x-2 hover:text-foreground transition-all duration-300 cursor-pointer">
+                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                <span>Sites para Profissionais Liberais</span>
               </li>
-              <li className="flex items-center space-x-3 hover:text-foreground transition-luxury cursor-pointer">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>• E-commerce Sofisticado</span>
+              <li className="flex items-center space-x-2 hover:text-foreground transition-all duration-300 cursor-pointer">
+                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                <span>E-commerce Sofisticado</span>
               </li>
-              <li className="flex items-center space-x-3 hover:text-foreground transition-luxury cursor-pointer">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>• Manutenção e Suporte VIP</span>
+              <li className="flex items-center space-x-2 hover:text-foreground transition-all duration-300 cursor-pointer">
+                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                <span>Manutenção e Suporte VIP</span>
               </li>
-              <li className="flex items-center space-x-3 hover:text-foreground transition-luxury cursor-pointer">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>• Consultoria Digital Estratégica</span>
+              <li className="flex items-center space-x-2 hover:text-foreground transition-all duration-300 cursor-pointer">
+                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                <span>Consultoria Digital Estratégica</span>
               </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div className="space-y-6">
-            <h4 className="font-playfair text-2xl font-bold text-foreground flex items-center">
-              <MessageCircle className="w-6 h-6 text-primary mr-2" />
+            <h4 className="font-inter text-xl font-bold text-foreground flex items-center">
+              <MessageCircle className="w-5 h-5 text-primary mr-2" />
               Contato Premium
             </h4>
             
             <div className="space-y-4">
               <button
                 onClick={handleWhatsAppClick}
-                className="flex items-center space-x-4 text-muted-foreground hover:text-foreground transition-luxury group w-full text-left"
+                className="flex items-center space-x-3 text-muted-foreground hover:text-foreground transition-all duration-300 group w-full text-left"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-teal-500 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-bounce">
-                  <MessageCircle className="w-6 h-6 text-white" />
+                <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300">
+                  <MessageCircle className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <div>
-                  <div className="font-inter text-lg font-semibold">(11) 99999-9999</div>
+                  <div className="font-inter font-semibold">(11) 99999-9999</div>
                   <div className="font-inter text-sm text-primary">WhatsApp Premium</div>
                 </div>
               </button>
               
-              <div className="flex items-center space-x-4 text-muted-foreground">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center">
-                  <Mail className="w-6 h-6 text-white" />
+              <div className="flex items-center space-x-3 text-muted-foreground">
+                <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <div>
-                  <div className="font-inter text-lg">contato@sitespremium.com</div>
+                  <div className="font-inter">contato@sitespremium.com</div>
                   <div className="font-inter text-sm text-primary">E-mail Corporativo</div>
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-card border border-primary/20 rounded-2xl p-6 shadow-elegant">
-              <h5 className="font-playfair text-lg font-bold text-foreground mb-3">
-                ⏰ Horário de Atendimento VIP
+            <div className="bg-card border border-border rounded-xl p-4">
+              <h5 className="font-inter font-bold text-foreground mb-2">
+                Horário de Atendimento VIP
               </h5>
               <p className="font-inter text-sm text-muted-foreground">
                 <strong>Segunda a Sexta:</strong> 9h às 20h<br />
@@ -144,7 +144,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <div className="flex space-x-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  <Star key={i} className="w-4 h-4 text-primary fill-current" />
                 ))}
               </div>
               <span className="font-inter text-sm text-muted-foreground ml-2">

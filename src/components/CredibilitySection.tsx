@@ -4,26 +4,22 @@ const stats = [
   {
     icon: Users,
     number: "200+",
-    label: "Clientes Satisfeitos",
-    gradient: "from-blue-400 to-indigo-500"
+    label: "Clientes Satisfeitos"
   },
   {
     icon: Clock,
     number: "5",
-    label: "Dias de Entrega",
-    gradient: "from-green-400 to-teal-500"
+    label: "Dias de Entrega"
   },
   {
     icon: Trophy,
     number: "4.9",
-    label: "Avaliação Média",
-    gradient: "from-yellow-400 to-orange-500"
+    label: "Avaliação Média"
   },
   {
     icon: Award,
     number: "100%",
-    label: "Projetos Entregues",
-    gradient: "from-purple-400 to-pink-500"
+    label: "Projetos Entregues"
   }
 ];
 
@@ -63,15 +59,15 @@ const CredibilitySection = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Stats */}
         <div className="text-center mb-24 animate-fade-in-up">
-          <div className="inline-block bg-gradient-card border border-primary/30 rounded-full px-6 py-3 shadow-luxury mb-8">
-            <span className="text-sm font-medium bg-gradient-luxury bg-clip-text text-transparent">
-              📊 Resultados Comprovados
+          <div className="inline-block bg-card border border-border rounded-full px-4 py-2 mb-8">
+            <span className="text-sm font-medium text-foreground">
+              Resultados Comprovados
             </span>
           </div>
 
-          <h2 className="font-playfair text-4xl lg:text-6xl font-bold mb-8 text-foreground">
+          <h2 className="font-inter text-3xl lg:text-5xl font-bold mb-8 text-foreground">
             Nossos números{" "}
-            <span className="bg-gradient-luxury bg-clip-text text-transparent">
+            <span className="text-primary">
               falam por si só
             </span>
           </h2>
@@ -85,13 +81,13 @@ const CredibilitySection = () => {
                   className="text-center group animate-fade-in-up"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
-                  <div className={`w-20 h-20 bg-gradient-to-br ${stat.gradient} rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-bounce shadow-luxury`}>
-                    <IconComponent className="w-10 h-10 text-white drop-shadow-lg" />
+                  <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300">
+                    <IconComponent className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <div className="font-playfair text-4xl lg:text-5xl font-bold bg-gradient-luxury bg-clip-text text-transparent mb-3">
+                  <div className="font-inter text-3xl lg:text-4xl font-bold text-primary mb-3">
                     {stat.number}
                   </div>
-                  <div className="font-inter text-muted-foreground text-lg">
+                  <div className="font-inter text-muted-foreground">
                     {stat.label}
                   </div>
                 </div>
@@ -103,25 +99,25 @@ const CredibilitySection = () => {
         {/* About */}
         <div className="text-center mb-20 max-w-5xl mx-auto animate-fade-in-up" style={{animationDelay: '0.4s'}}>
           <div className="flex items-center justify-center mb-8">
-            <Crown className="w-8 h-8 text-primary mr-3" />
-            <h3 className="font-playfair text-3xl lg:text-4xl font-bold text-foreground">
+            <Crown className="w-6 h-6 text-primary mr-3" />
+            <h3 className="font-inter text-2xl lg:text-3xl font-bold text-foreground">
               Sua presença digital em{" "}
-              <span className="bg-gradient-luxury bg-clip-text text-transparent">
+              <span className="text-primary">
                 mãos especialistas
               </span>
             </h3>
           </div>
           
-          <p className="font-inter text-xl lg:text-2xl text-muted-foreground leading-relaxed">
+          <p className="font-inter text-lg lg:text-xl text-muted-foreground leading-relaxed">
             Nos últimos anos ajudamos diversos empreendedores, pequenos negócios e 
             profissionais liberais a conquistarem{" "}
             <span className="font-semibold text-foreground">presença digital de elite</span>{" "}
             de forma rápida e sofisticada. Nossa missão é entregar sites que{" "}
-            <span className="font-bold bg-gradient-luxury bg-clip-text text-transparent">
+            <span className="font-bold text-primary">
               não apenas impressionam
             </span>, 
             mas que também{" "}
-            <span className="font-bold bg-gradient-luxury bg-clip-text text-transparent">
+            <span className="font-bold text-primary">
               vendem e geram resultados extraordinários
             </span>.
           </p>
@@ -130,16 +126,16 @@ const CredibilitySection = () => {
         {/* Testimonials */}
         <div className="animate-fade-in-up" style={{animationDelay: '0.6s'}}>
           <div className="text-center mb-16">
-            <div className="inline-flex items-center bg-gradient-card border border-primary/30 rounded-full px-6 py-3 shadow-luxury mb-8">
-              <Gem className="w-5 h-5 text-primary mr-2" />
-              <span className="text-sm font-medium bg-gradient-luxury bg-clip-text text-transparent">
-                💎 Depoimentos Premium
+            <div className="inline-flex items-center bg-card border border-border rounded-full px-4 py-2 mb-8">
+              <Gem className="w-4 h-4 text-primary mr-2" />
+              <span className="text-sm font-medium text-foreground">
+                Depoimentos Premium
               </span>
             </div>
             
-            <h3 className="font-playfair text-3xl lg:text-4xl font-bold text-foreground mb-4">
+            <h3 className="font-inter text-2xl lg:text-3xl font-bold text-foreground mb-4">
               O que nossos{" "}
-              <span className="bg-gradient-luxury bg-clip-text text-transparent">
+              <span className="text-primary">
                 clientes VIP
               </span>{" "}
               dizem
@@ -150,40 +146,35 @@ const CredibilitySection = () => {
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index}
-                className="group bg-gradient-card border border-primary/20 p-8 rounded-3xl shadow-elegant hover:shadow-luxury transition-luxury hover:-translate-y-2 relative overflow-hidden"
+                className="group bg-card border border-border p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                {/* Shimmer effect */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-luxury">
-                  <div className="absolute inset-0 bg-gradient-luxury opacity-5 animate-shimmer"></div>
-                </div>
-
-                <div className="relative z-10">
-                  <div className="flex mb-6">
+                <div>
+                  <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
+                      <Star key={i} className="w-5 h-5 text-primary fill-current" />
                     ))}
                   </div>
                   
-                  <p className="font-inter text-muted-foreground mb-8 italic text-lg leading-relaxed">
+                  <p className="font-inter text-muted-foreground mb-6 italic leading-relaxed">
                     "{testimonial.text}"
                   </p>
                   
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-luxury rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm">
                       {testimonial.avatar}
                     </div>
                     <div>
-                      <div className="font-playfair text-xl font-bold text-foreground">{testimonial.name}</div>
+                      <div className="font-inter text-lg font-bold text-foreground">{testimonial.name}</div>
                       <div className="font-inter text-sm text-primary">{testimonial.business}</div>
                     </div>
                   </div>
                 </div>
 
-                {/* Premium badge */}
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-luxury">
-                  <div className="bg-gradient-luxury rounded-full p-2">
-                    <Star className="w-4 h-4 text-white" />
+                {/* Star icon */}
+                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="bg-primary rounded-full p-1">
+                    <Star className="w-3 h-3 text-primary-foreground" />
                   </div>
                 </div>
               </div>
