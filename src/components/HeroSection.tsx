@@ -22,71 +22,70 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-10 animate-fade-in-up">
             {/* Premium Badge */}
-            <div className="inline-flex items-center bg-gradient-card border border-primary/30 rounded-full px-6 py-3 shadow-luxury">
-              <Sparkles className="w-5 h-5 text-primary mr-2" />
-              <span className="text-sm font-medium bg-gradient-luxury bg-clip-text text-transparent">
-                ✨ Serviço Premium de Alta Qualidade
+            <div className="inline-flex items-center bg-card border border-border rounded-full px-4 py-2">
+              <Sparkles className="w-4 h-4 text-primary mr-2" />
+              <span className="text-sm font-medium text-foreground">
+                Serviço Premium de Alta Qualidade
               </span>
             </div>
 
             <div className="space-y-6">
-              <h1 className="font-playfair text-5xl lg:text-7xl font-bold leading-tight text-foreground">
+              <h1 className="font-inter text-4xl lg:text-6xl font-bold leading-tight text-foreground">
                 Transforme sua ideia em um{" "}
-                <span className="bg-gradient-luxury bg-clip-text text-transparent relative">
+                <span className="text-primary relative">
                   site profissional
                   <div className="absolute -top-2 -right-2">
-                    <Star className="w-8 h-8 text-primary animate-pulse" />
+                    <Star className="w-6 h-6 text-primary animate-pulse" />
                   </div>
                 </span>{" "}
                 em apenas{" "}
-                <span className="bg-gradient-luxury bg-clip-text text-transparent font-black">
+                <span className="text-primary font-black">
                   5 dias
                 </span>
               </h1>
               
-              <p className="font-inter text-xl lg:text-2xl text-muted-foreground leading-relaxed">
+              <p className="font-inter text-lg lg:text-xl text-muted-foreground leading-relaxed">
                 Receba um site{" "}
                 <span className="font-semibold text-foreground">moderno, responsivo e pronto para gerar resultados</span>, 
                 com domínio e hospedagem inclusos, por apenas{" "}
-                <span className="font-bold bg-gradient-luxury bg-clip-text text-transparent text-3xl">
+                <span className="font-bold text-primary text-2xl">
                   R$ 497,00
                 </span>
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-6">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                variant="hero" 
-                size="lg" 
+                variant="default" 
+                size="default" 
                 onClick={handleWhatsAppClick}
-                className="font-inter text-xl px-12 py-8 h-auto relative group"
+                className="font-inter text-sm px-6 py-3 h-auto"
               >
-                <div className="absolute inset-0 bg-gradient-luxury rounded-lg opacity-0 group-hover:opacity-100 transition-luxury blur animate-shimmer"></div>
-                <Zap className="w-6 h-6 mr-3" />
+                <Zap className="w-4 h-4 mr-2 text-primary-foreground" />
                 Quero meu site agora
               </Button>
               
               <Button 
-                variant="luxury" 
-                size="lg"
-                className="font-inter text-lg px-8 py-8 h-auto"
+                variant="outline" 
+                size="default"
+                className="font-inter text-sm px-6 py-3 h-auto"
               >
-                📞 Ver exemplos
+                Ver exemplos
               </Button>
             </div>
             
-            <div className="flex flex-wrap items-center gap-8 text-sm text-muted-foreground">
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-success rounded-full animate-pulse"></div>
-                <span className="font-medium">✅ Entrega garantida em 5 dias</span>
+            <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="font-medium">Entrega garantida em 5 dias</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-                <span className="font-medium">🛡️ Suporte técnico premium</span>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="font-medium">Suporte técnico premium</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-primary-glow rounded-full animate-pulse"></div>
-                <span className="font-medium">💎 100% Personalizado</span>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="font-medium">100% Personalizado</span>
               </div>
             </div>
           </div>
@@ -103,13 +102,13 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-luxury opacity-0 group-hover:opacity-20 transition-luxury"></div>
             </div>
             
-            {/* Floating luxury badges */}
-            <div className="absolute -top-6 -right-6 bg-gradient-luxury text-white px-6 py-4 rounded-2xl text-sm font-bold shadow-premium animate-float border border-primary/30">
-              <Zap className="w-5 h-5 inline mr-2" />
+            {/* Floating badges */}
+            <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-xs font-semibold">
+              <Zap className="w-4 h-4 inline mr-1" />
               Entrega Express
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-gradient-card border border-primary/30 text-foreground px-6 py-4 rounded-2xl text-sm font-bold shadow-luxury animate-float" style={{animationDelay: '1s'}}>
-              <Sparkles className="w-5 h-5 inline mr-2 text-primary" />
+            <div className="absolute -bottom-4 -left-4 bg-card border border-border text-foreground px-4 py-2 rounded-lg text-xs font-semibold">
+              <Sparkles className="w-4 h-4 inline mr-1 text-primary" />
               100% Responsivo
             </div>
             
